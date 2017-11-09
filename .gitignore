@@ -1,6 +1,5 @@
 *.out
 *.log
-*.pdf
 *.aux
 session
 *.swp
