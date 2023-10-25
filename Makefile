@@ -1,3 +1,5 @@
+.PHONY: main
+
 main: resume_cv.pdf cover_letter.pdf
 
 resume_cv.pdf: resume_cv.tex cv-sections/committees.tex  \
