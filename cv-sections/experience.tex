@@ -13,23 +13,43 @@
 %------------------------------------------------
 
 \cventry
+{Full-stack Developer} % Job title
+{Singapore-based Hedge Fund} % Organization
+{Ha Noi, Vietnam} % Location
+{Apr. 2024 - Present} % Date(s)
+{ % Description(s) of tasks/responsibilities
+\begin{cvitems}
+\item{(Key Member) Developed \& maintained Service for Managing Trading Data}
+\item{Written in Go (Backend) \& HTMX (Frontend)}
+\item{Used PostgreSQL database}
+\item{Managed more than 1PB trading \& other data, distributed across multiple data-centers}
+\item{Used by other developers and researchers for writing and reading}
+\item{Helped to simplify permission control, data synchronization, complex data deletion \& reading rules}
+\item{Scattered data to multiple storage disks to help improve read \& write performance}
+\item{Applied TLA+ formal model checking to help design \& implement multiple parts of the system, to avoid race conditions and data lost}
+\item{TLA+ source code: https://github.com/QuangTung97/tla-plus/blob/master/USS/USS.tla}
+\end{cvitems}
+}
+
+%------------------------------------------------
+
+\cventry
 {Backend Developer} % Job title
 {Teko Vietnam} % Organization
 {Ha Noi, Vietnam} % Location
-{Nov. 2022 - Present} % Date(s)
+{Nov. 2022 - Apr. 2024} % Date(s)
 { % Description(s) of tasks/responsibilities
 \begin{cvitems}
-\item{(Key Member) Developed \& Maintained User-Facing Service for Returning Product Data}
+\item{(Key Member) Developed \& maintained User-Facing Product Searching \& Listing Service}
 \item{Written in Go \& gRPC \& gRPC Gateway}
 \item{Taken ownership since December 2023}
-\item{Highest Traffic Service of Teko ERP}
-\item{Used ElasticSearch for Complex Searching \& Filtering Logics}
-\item{Developed a Sharding Mechanism for Cutting or Combining ElasticSearch Indices between Clusters without Downtime} 
-\item{Migration is Online, Safe and Revertible}
-\item{Multiple Tenants can be stored \& read from the same or different Elastic Clusters} 
-\item{Applied Memcached with Lease for Consistent Caching to Reduce x5 Times P95 Latency (using the libraries below)}
-\item{Cache Hit Rate > 99\%}
-\item{Used MySQL Database}
+\item{Highest traffic service of Teko ERP}
+\item{Used ElasticSearch for complex searching \& filtering logics}
+\item{Developed a sharding mechanism to distribute data on multiple Elastic clusters without downtime}
+\item{Multiple tenants can be stored \& read from the same or different Elastic clusters}
+\item{Applied Memcached with lease mechanism for consistent caching to reduce x5 P95 latency}
+\item{Cache hit rate > 99\%}
+\item{Used MySQL database}
 \end{cvitems}
 }
 
@@ -42,13 +62,13 @@
 {Dec. 2022 - Present} % Date(s)
 { % Description(s) of tasks/responsibilities
 \begin{cvitems}
-\item{Developed a Caching Library with Strong Consistency \& High Performance}
+\item{Developed a caching library with strong consistency \& high performance}
 \item{Support memcache lease for consistent caching}
 \item{Support complex batching to improve performance}
 \item{Support cache replication for high availability \& easily restarting memcached instances without affecting performance}
-\item{GitHub Source: https://github.com/QuangTung97/memproxy}
-\item{GitHub Source: https://github.com/QuangTung97/go-memcache}
-\item{Applied those Libraries for two high-traffic services of Teko \& VNPay}
+\item{GitHub source: https://github.com/QuangTung97/memproxy}
+\item{GitHub source: https://github.com/QuangTung97/go-memcache}
+\item{Applied for two high-traffic services of Teko \& VNPay}
 \end{cvitems}
 }
 
@@ -61,9 +81,9 @@
 {May. 2021 - Present} % Date(s)
 { % Description(s) of tasks/responsibilities
 \begin{cvitems}
-\item{(Key Member) Developed \& Maintaining a Notification System for OTT Messages}
+\item{(Key Member) Developed \& maintained a notification system for OTT messages}
 \item{Written in Python with Flask}
-\item{Used MySQL Database}
+\item{Used MySQL database}
 \item{Used Google FCM}
 \end{cvitems}
 }
@@ -77,31 +97,13 @@
 {May. 2021 - Present} % Date(s)
 { % Description(s) of tasks/responsibilities
 \begin{cvitems}
-\item{(Key Member) Developed \& Maintaining Voucher Systems for VNPAY QR \& Bank Cards}
-\item{Implemented Core Promotion Logic, Listing \& Searching Vouchers \& Shops}
+\item{(Key Member) Developed \& maintained Voucher Service for VNPAY QR \& Bank Cards}
+\item{Implemented core promotion logic, listing \& searching vouchers}
 \item{Written in Go with gRPC \& gRPC Gateway}
-\item{Used MySQL Database}
-\item{Used Elasticsearch for Searching Near By Shops \& Storing Logs}
+\item{Used MySQL database}
+\item{Used Elasticsearch for searching vouchers \& near by shops}
 \item{Deployed on Kubernetes with CI/CD}
-\item{Taken Ownership since July 2022}
-\end{cvitems}
-}
-
-%------------------------------------------------
-
-\cventry
-{Software Developer} % Job title
-{Hanoi University of Science and Technology} % Organization
-{Ha Noi, Vietnam} % Location
-{January. 2020 - June. 2020} % Date(s)
-{ % Description(s) of tasks/responsibilities
-\begin{cvitems}
-\item{(Key Member) Developed a Distribution Management System}
-\item{Written in GoLang (Backend), JavaScript (Frontend)}
-\item{React / React-Router / Material-UI (Frontend)}
-\item{PostgreSQL Database}
-\item{Redis for Session Storage}
-\item{Nginx for Reverse Proxy}
+\item{Taken ownership since July 2022}
 \end{cvitems}
 }
 
@@ -114,25 +116,9 @@
 {Aug. 2018 - Dec. 2018} % Date(s)
 { % Description(s) of tasks/responsibilities
 \begin{cvitems}
-\item{(One Member) Developed a Simple Compiler for the Extended PL/0 Language}
+\item{(One Member) Developed a simple compiler for the Extended PL/0 Language}
 \item{Written in C++11}
 \item{Used Flex \& Bison}
-\end{cvitems}
-}
-
-%------------------------------------------------
-
-\cventry
-{Software Developer} % Job title
-{Hanoi University of Science and Technology} % Organization
-{Ha Noi, Vietnam} % Location
-{Aug. 2017 - Dec. 2017} % Date(s)
-{ % Description(s) of tasks/responsibilities
-\begin{cvitems}
-\item{(Key Member) Developed a networked multi-player game: "Chiec non ki dieu"}
-\item{Written in Java on Android platform}
-\item{Used OpenGL ES 2.x}
-\item{Used Protocol Buffer and basic TCP and UDP packages}
 \end{cvitems}
 }
 

@@ -1,5 +1,4 @@
 .PHONY: main
-
 main: resume_cv.pdf cover_letter.pdf
 
 resume_cv.pdf: resume_cv.tex cv-sections/committees.tex  \
@@ -13,3 +12,6 @@ resume_cv.pdf: resume_cv.tex cv-sections/committees.tex  \
 cover_letter.pdf: cover_letter.tex
 	lualatex cover_letter.tex
 
+.PHONY: install-latex
+install-latex:
+	sudo apt install texlive-full
